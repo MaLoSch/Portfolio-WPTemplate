@@ -1,10 +1,6 @@
 <?php
 	//check http://php.net/manual/en/function.date-default-timezone-set.php
-	$tz = '<script type="text/javascript">var timezone = jstz.determine(); timezone.name();</script>';
-	//date_default_timezone_set($timezone);
-	//print("$tz");
-	date_default_timezone_set($tz);
-	//date_default_timezone_set("America/Vancouver");
+	date_default_timezone_set("America/Vancouver");
 
 	
 	//check http://www.w3schools.com/php/func_date_date.asp for data function.
