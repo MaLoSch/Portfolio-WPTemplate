@@ -87,7 +87,7 @@ iframe { margin-bottom: 16px; }
 /********** RESPONSIVE **********/
 
 /* Basic responsive settings */
-ul a { font-family: 'bariol_light'; font-size: 29px; line-height: 35px; text-decoration: none; text-transform: lowercase; } /* Links in navigation panel*/
+ul a { font-family: 'bariol_light'; font-size: 29px; line-height: 35px; text-decoration: none; } /* Links in navigation panel*/
 ul a:hover { font-family: 'bariol_regular'; text-decoration: none; }
 ul a:visited { text-decoration: none; }
 .current_page_item a { font-family: 'bariol_regular'; }
