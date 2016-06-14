@@ -14,7 +14,7 @@
 	} else if ($month > 2 && $month <= 5) {
 		$color = "#e05038"; //Spring
 	} else if ($month > 5 && $month <= 8) {
-		$color = "#729f98"; //Summer
+		$color = "#349091"; //Summer
 	} else if ($month > 8 && $month <= 11) {
 		$color = "#97743a"; //Autumn
 	}
