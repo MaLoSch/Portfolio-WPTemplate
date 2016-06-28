@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width" />
 		
-		<!-- <title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title> <!-- Text displayed in tab -->
+		<!-- <title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title> Text displayed in tab -->
 		<title><?php if (is_front_page()) { ?> Portfolio - <?php bloginfo('name'); } else { wp_title(''); ?> - <?php bloginfo('name'); } ?></title>
 		
 		 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.php" type="text/css" media="screen" /> <!-- Link to theme css -->

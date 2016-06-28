@@ -135,7 +135,7 @@ ul a:visited { color: <?=$highlight?>; }
 .main { width: 926px; }
 .featureProject { width: 33.3%; }
 #sidebar_menu { display: inline; }
-#container { width: 1240px; max-width: initial; padding: 0; }
+#container { width: 1240px; max-width: auto; max-width: initial; padding: 0; }
 #currentColor { margin-top: 16px; }
 }
 

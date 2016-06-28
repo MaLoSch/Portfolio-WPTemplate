@@ -2,7 +2,7 @@
 WordPress Template for online portfolio - malosch.com
 
 Bugs (descending priority)
-- Site currently not working on IE
+- 
 
 Wishlist
 - Highlight color does slight animation when page is loaded for the first time. Similar to http://jsfiddle.net/5r8BY/
