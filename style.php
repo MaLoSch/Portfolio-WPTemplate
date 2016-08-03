@@ -59,7 +59,7 @@ a:visited { font-family: 'bariol_bold_italic'; text-decoration:underline; }
 
 /* Project page */
 .project_description { max-width: 100%; margin: 0 0 16px 0; float: left; }
-.project_quote { text-align: center; float: left; border: 1px; border-color: <?=$highlight?>; color: <?=$highlight?>; margin: 16px 0 32px 0; border-style: solid none; padding: 16px; font-size: 36px; font-family: 'bariol_bold_italic'; }
+.project_quote { text-align: center; border: 1px; border-color: <?=$highlight?>; color: <?=$highlight?>; margin: 16px 0 32px 0; border-style: solid none; padding: 16px; font-size: 36px; font-family: 'bariol_bold_italic'; }
 .date { width: 298px; float: left; margin: 0 0 16px 0; }
 
 /* Images */
