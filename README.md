@@ -3,7 +3,7 @@ WordPress Template for online portfolio - malosch.com
 
 Bugs (descending priority)
 - Not working in IE but working in Edge
-- Some qutoes not displayed correctly (see Prototyping Interfaces post)
+- Look for .project_quotes bugs in Edge, Chrome, Firefox, and Safari
 
 Wishlist
 - Highlight color does slight animation when page is loaded for the first time. Similar to http://jsfiddle.net/5r8BY/
