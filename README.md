@@ -6,6 +6,7 @@ ToDo
 - Add missing projects
 	- Intuity Projects (Mercedes Benz / Phone / LightControlThingy)
 - Add plugin list to GitHub
+- Add back to top button or have menu button always visible
 
 Bugs (descending priority)
 - Not working in IE but working in Edge
