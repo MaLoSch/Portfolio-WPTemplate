@@ -1,8 +1,17 @@
 # Portfolio-WPTemplate
 WordPress Template for online portfolio - malosch.com
 
+ToDo
+- Add missing pictures and descriptions
+- Add missing projects
+	- Intuity Projects (Mercedes Benz / Phone / LightControlThingy)
+- Add plugin list to GitHub
+
 Bugs (descending priority)
 - Not working in IE but working in Edge
+	- Do I care?
+- Failed to load resource: the server responded with a status of 404 (Not Found)
+- Bottom Margin after iFrame > 16 px
 - Look for .project_quotes bugs in Edge, Chrome, Firefox, and Safari
 
 Wishlist
