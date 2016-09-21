@@ -10,13 +10,13 @@
 	$multiplier = -0.055;
 	
 	if($month > 11 || $month <= 2) {
-		$color = "#920049"; // Winter
+		$color = "#B23241"; // Winter
 	} else if ($month > 2 && $month <= 5) {
-		$color = "#e05038"; //Spring
+		$color = "#299CA8"; //Spring
 	} else if ($month > 5 && $month <= 8) {
-		$color = "#349091"; //Summer
+		$color = "#81810B"; //Summer
 	} else if ($month > 8 && $month <= 11) {
-		$color = "#97743a"; //Autumn
+		$color = "#FF8500"; //Autumn
 	}
 	
 	$brightness = $base - $hour;
