@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/pushy.css" type="text/css" media="screen" /> <!-- Link to pushy css -->
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/hover.css" rel="stylesheet" media="all"> <!-- Link to hover css -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jstz.min.js"></script> <!-- link to jsty.js file -->
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /> <!-- Pingback -->
 		
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> <!-- jQuery -->

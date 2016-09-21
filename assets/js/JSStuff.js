@@ -10,7 +10,7 @@ function getGreeting() {
 	var greeting = "Hello!";
 			 
 	if (hours >= 0 && hours < 5) {
-		var greeting = "Dude! Go catch some sleep...";
+		var greeting = "Still awake?";
 	} else if (hours >= 5 && hours < 9) {
 		var greeting = "Good morning!";
 	} else if (hours >= 9 && hours < 15) {
