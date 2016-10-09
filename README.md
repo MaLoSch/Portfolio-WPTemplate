@@ -3,9 +3,9 @@ WordPress Template for online portfolio - malosch.com
 
 ToDo
 - Change fonttypes so it doesn't look weird in Firefox
+- Add filter to Archive (years, design, teaching, fun, reasearch, all)
 - Add missing pictures and descriptions
 - Add missing projects
-	- Intuity Projects (Mercedes Benz / Phone / LightControlThingy)
 - Add plugin list to GitHub
 - Add Meta Data to WordPress
 - Add back to top button or have menu button always visible
