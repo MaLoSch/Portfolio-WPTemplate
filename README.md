@@ -2,6 +2,7 @@
 WordPress Template for online portfolio - malosch.com
 
 ToDo
+- Clean up spacing between elements
 - Change news feed to Twitter feed
 - Change fonttypes so it doesn't look weird in Firefox
 - Add filter to Archive (years, design, teaching, fun, reasearch, all)
