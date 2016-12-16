@@ -54,7 +54,7 @@ a:visited { font-family: 'bariol_bold_italic'; text-decoration:underline; }
 .featureImgBackup { width: 100%; height: 176px; background: <?=$highlight?>; }
 .mask {	background-color:<?=$highlight?>; display: table; width: calc(100% - 32px); height: 144px; padding:16px; float: left; position: absolute; left: 0px; top: 0px; opacity: 0; text-align: center; transition: opacity .5s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 .mask:hover { opacity: 1; }
-.mask span { color: #fff; font-size: 21px; text-decoration: underline; display: table-cell; vertical-align: middle; }
+.mask span { color: <?=$white?>; font-size: 21px; text-decoration: underline; display: table-cell; vertical-align: middle; }
 .excerpt { padding-right: 16px; }
 
 /* Project page */
@@ -82,6 +82,12 @@ iframe { margin-bottom: 16px; }
 /* Publications */
 .csl-bib-body { padding-left: 0 !important; text-indent: 0 !important; line-height: normal !important; }
 
+/* Archive */
+.categories_ul li { display: inline-block; }
+.categories_ul li a { display:block; padding: 0px 10px; background-color: #ddd; color: #333; font-size:13px; font-family: 'bariol_regular'; transition: all 0.25s ease-in-out; margin-bottom: 4px; }
+.categories_ul li a:visited { background-color: #ddd; color: #333; } 
+.categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; } 
+
 
 
 /********** RESPONSIVE **********/
@@ -91,7 +97,7 @@ ul a { font-family: 'bariol_light'; font-size: 29px; line-height: 35px; text-dec
 ul a:hover { font-family: 'bariol_regular'; text-decoration: none; }
 ul a:visited { text-decoration: none; }
 .current_page_item a { font-family: 'bariol_regular'; }
-.menu-btn { background-color:<?=$highlight?>; cursor: pointer; padding: 3px 8px 5px; color: #fff; margin: 24px 0 32px; }
+.menu-btn { background-color:<?=$highlight?>; cursor: pointer; padding: 3px 8px 5px; color: <?=$white?>; margin: 24px 0 32px; }
 .main { float: left; }
 .featureProject { margin: 0 0 32px 0; float: left; }
 #sidebar_menu {	width: 282px; padding: 0 32px 0 0; float: left; }

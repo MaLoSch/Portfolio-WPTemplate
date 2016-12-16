@@ -7,7 +7,14 @@
 	 	  	
 			<div class="main">
 				<h1 class="highlightColor"><?php the_field('pagetagline'); ?></h1> <!-- get title of page -->
-				<h2><?php echo get_post_meta($post->ID, 'PageIntro', true); ?></h2> <!-- get post meta data --> 
+				<h2><?php echo get_post_meta($post->ID, 'PageIntro', true); ?></h2> <!-- get post meta data -->
+				<ul class="categories_ul">
+					<?php wp_list_categories( array(
+        				'orderby' => 'name',
+						'title_li' => '', // don't show a title over the category links
+						'exclude' => array(19) // exclude 'portfolio' from categories (since I have a separate page for them)
+				    ) ); ?> 
+				</ul> 
                 <?php foreach(posts_by_year() as $year => $posts) : ?>
                     <h3 class="highlightColor"><?php echo $year; ?></h3>
 					<div class="projectPanel">

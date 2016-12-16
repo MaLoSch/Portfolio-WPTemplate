@@ -5,8 +5,8 @@ ToDo
 - Clean up spacing between elements
 - Change news feed to Twitter feed
 - Change fonttypes so it doesn't look weird in Firefox
-- Add filter to Archive (years, design, teaching, fun, reasearch, all)
-- Add missing pictures and descriptions
+- Create Category page 
+- Add missing pictures and descriptions and filters
 - Add missing projects
 - Add plugin list to GitHub
 - Add Meta Data to WordPress
