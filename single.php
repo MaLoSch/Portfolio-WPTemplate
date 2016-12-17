@@ -18,6 +18,11 @@
 						<br/>
 						<p class="highlightColor">Year</p>
 						<p><?php the_date('Y'); ?></p>
+						<br/>
+						<p class="highlightColor">Categories</p>
+						<ul class="categories_ul">
+							<?php echo the_category(); ?> 
+						</ul>
 					</div>
 					<?php the_content(); ?> <!-- display the content of the current post -->
       			<?php endwhile; endif; ?>
