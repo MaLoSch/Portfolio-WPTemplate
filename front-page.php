@@ -19,7 +19,7 @@
 	            	<div class="featureProject">
 						<div class="featureImg">
 		                    <?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail('full');
+								the_post_thumbnail('thumbnail');
 							} else { ?>
 								<div class="featureImgBackup"></div>
 							<?php } ?>
@@ -47,7 +47,7 @@
 	            	<div class="featureProject">
 						<div class="featureImg">
 		                    <?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail('full');
+								the_post_thumbnail('thumbnail');
 							} else { ?>
 								<div class="featureImgBackup"></div>
 							<?php } ?>
@@ -75,7 +75,7 @@
 	            	<div class="featureProject">
 						<div class="featureImg">
 		                    <?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail('full');
+								the_post_thumbnail('thumbnail');
 							} else { ?>
 								<div class="featureImgBackup"></div>
 							<?php } ?>
@@ -103,7 +103,7 @@
 	            	<div class="featureProject">
 						<div class="featureImg">
 		                    <?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail('full');
+								the_post_thumbnail('thumbnail');
 							} else { ?>
 								<div class="featureImgBackup"></div>
 							<?php } ?>
