@@ -16,9 +16,14 @@
 				    ) ); ?> 
 				</ul>
 				
-				<?php if ( have_posts() ) : ?> <!-- If posts are availble, do the following... -->
+				<!-- <?php if ( have_posts() ) : ?> <!-- If posts are availble, do the following... -->
 					<h3 class="highlightColor"><?php single_cat_title(); ?></h3> <!-- Show selected category over the single entries -->
-					<?php while ( have_posts() ) : the_post(); ?> <!-- WordPress loop -->
+					
+					<?php
+						if ( have_posts() ): 
+							while ( have_posts() ):
+								the_post();
+					?> <!-- WordPress loop -->
 					
 						<div class="projectPanel"> <!-- div usually contains a single project but is here used to have the right width for the single project links -->
 							<div class="featureProject"> <!-- a single post link (image, title, and excerpt (if available) -->
@@ -38,7 +43,10 @@
 							</div>
 						</div>
 					
-					<?php endwhile; ?>
-				<?php endif; ?>
+					<?php
+							endwhile;
+						endif;
+					?>
+				<!-- <?php endif; ?> -->
 				
                 <?php get_footer(); ?> <!-- get footer.php file -->
