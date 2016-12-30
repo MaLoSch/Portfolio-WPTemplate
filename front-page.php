@@ -1,4 +1,4 @@
-		<!-- This is the 'Portfolio' page -->
+		<!-- This is the 'Portfolio' page (front-page.php) -->
 		<?php 
 			get_header(); // get header.php file
 		?>
@@ -26,28 +26,28 @@
 						while (have_posts()):
 							the_post();
 				?>
-						<div class="projectPanel">
-		            		<div class="featureProject">
-								<div class="featureImg">
-			                    	<?php 
-										if ( has_post_thumbnail() ) {
-											the_post_thumbnail('thumbnail');
-										} else { 
-									?>
-										<div class="featureImgBackup"></div>
-									<?php 
-										}
-									?>
-		                			<a href="<?php the_permalink() ?>">
-	                            		<div class="mask">
-											<span><?php echo get_the_title(); ?></span>
-										</div>
-	                            	</a>
-		                		</div>
-								<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a>
-								<p class="excerpt"><?php echo(get_the_excerpt()); ?></p>
-							</div>
-						</div>
+								<div class="projectPanel">
+				            		<div class="featureProject">
+										<div class="featureImg">
+					                    	<?php 
+												if ( has_post_thumbnail() ) {
+													the_post_thumbnail('thumbnail');
+												} else { 
+											?>
+													<div class="featureImgBackup"></div>
+											<?php 
+												}
+											?>
+				                			<a href="<?php the_permalink() ?>">
+			                            		<div class="mask">
+													<span><?php echo get_the_title(); ?></span>
+												</div>
+			                            	</a>
+				                		</div>
+										<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a>
+										<p class="excerpt"><?php echo(get_the_excerpt()); ?></p>
+									</div>
+								</div>
 				<?php
 						endwhile;
 					endif;
