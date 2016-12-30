@@ -86,7 +86,8 @@ iframe { margin-bottom: 16px; }
 .categories_ul li { display: inline-block; }
 .categories_ul li a { display:block; padding: 0px 10px; background-color: #ddd; color: #333; font-size:13px; font-family: 'bariol_regular'; transition: all 0.25s ease-in-out; margin-bottom: 4px; }
 .categories_ul li a:visited { background-color: #ddd; color: #333; } 
-.categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; } 
+.categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
+.categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
 
 
