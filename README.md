@@ -8,6 +8,8 @@ ToDo
 - Add missing projects
 	- CHI program
 	- DIS Website
+	- Own Portfolio
+- Think about categories (making, electronics, ...)
 - Add Meta Data to WordPress
 - Add back to top button or have menu button always visible
 
