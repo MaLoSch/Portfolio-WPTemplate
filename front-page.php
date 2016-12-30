@@ -15,12 +15,12 @@
                 
 				<h3 class="highlightColor">Portfolio</h3>
                 <!-- Custom WP Query -->
-				<?php
+				<!-- <?php
 					query_posts(array( // Create a custom WP query
 						'category_name' => 'Portfolio', // look for posts in the category 'Portfolio'
 						'posts_per_page' => '-1' // display all posts (-1)					
 					)); 
-				?>
+				?>-->
  				<?php 
 					if(have_posts()):
 						while (have_posts()):

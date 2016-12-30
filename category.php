@@ -18,12 +18,7 @@
 				
 				<!-- <?php if ( have_posts() ) : ?> <!-- If posts are availble, do the following... -->
 					<h3 class="highlightColor"><?php single_cat_title(); ?></h3> <!-- Show selected category over the single entries -->
-					
-					<?php
-						global $query_string; // create new query string
-						query_posts("{$query_string}&posts_per_page=-1"); // set posts in next query to unlimited (-1)
-					?>
-					
+
 					<?php
 						if ( have_posts() ): 
 							while ( have_posts() ):
