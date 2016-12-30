@@ -3,12 +3,11 @@ WordPress Template for online portfolio - malosch.com
 
 ToDo
 - Clean up spacing between elements
-- Change news feed to Twitter feed
 - Change fonttypes so it doesn't look weird in Firefox
-- Create Category page 
 - Add missing pictures and descriptions and filters
 - Add missing projects
-- Add plugin list to GitHub
+	- CHI program
+	- DIS Website
 - Add Meta Data to WordPress
 - Add back to top button or have menu button always visible
 
@@ -24,3 +23,14 @@ Wishlist
 	- Color change according to current time of the day. (Mornings it goes from dark to bright and in the evening vice versa)
 - Change the way links are presented. Underline should be colored while the text is black. On mouse-over the text changes to the color and the underline disappears.
 	- Use border-bottom: 1px solid #color;
+	
+Current Plugins
+- Advanced Custom Fields https://wordpress.org/plugins/advanced-custom-fields/
+- All-in-One WP Migration https://wordpress.org/plugins/all-in-one-wp-migration/
+- Ditty News Ticker https://wordpress.org/plugins/ditty-news-ticker/
+- Lazy Load https://wordpress.org/plugins/lazy-load/
+- Regenerate Thumbnails https://wordpress.org/plugins/regenerate-thumbnails/
+- Responsive Video Embeds https://wordpress.org/plugins/responsive-video-embeds/
+- Thumbnail Cleaner https://wordpress.org/plugins/thumbnail-cleaner/
+- wpautop-control https://wordpress.org/plugins/wpautop-control/
+- Zotpress https://wordpress.org/plugins/zotpress/
