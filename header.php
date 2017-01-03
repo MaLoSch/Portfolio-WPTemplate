@@ -6,15 +6,18 @@
 		<!-- <title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title> Text displayed in tab -->
 		<title><?php if (is_front_page()) { ?> Portfolio - <?php bloginfo('name'); } else { wp_title(''); ?> - <?php bloginfo('name'); } ?></title>
 		
-		 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.php" type="text/css" media="screen" /> <!-- Link to theme css -->
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.php" type="text/css" media="screen" /> <!-- Link to theme css -->
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/pushy.css" type="text/css" media="screen" /> <!-- Link to pushy css -->
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/hover.css" rel="stylesheet" media="all"> <!-- Link to hover css -->
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /> <!-- Pingback -->
 		
+		<!-- other -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> <!-- jQuery -->
- 
-		<?php wp_head(); ?> <!-- Necessary wp header hook -->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!-- Font Awesome -->
+				
+		<!-- header hook -->
+		<?php wp_head(); ?>
 	</head>
 	
 	<body>

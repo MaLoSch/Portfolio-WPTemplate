@@ -23,7 +23,7 @@ html, body { font-family: 'bariol_regular'; font-size: 18px; background-color: #
 .clear { clear: both; }
 .header { height: auto; } /* header including the colored line + respsonsive menu button + hex color code */
 #headerLine { height: 1px; width: 100%; background-color:<?=$highlight?>; } /* colored line on top of page */
-#footer p { margin: 16px 0 32px; float:left; font-size: 13px; }
+#footer p { margin: 16px 0 112px; float:left; font-size: 13px; }
 
 /* Headings */
 h1 { font-family: 'bariol_bold'; font-size: 21px; margin: 16px 0 32px; }
@@ -89,6 +89,13 @@ iframe { margin-bottom: 16px; }
 .categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
 .categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
+/* Back to top button */
+#return-to-top { position: fixed; bottom: 16px; left: 50%; background-color: #ddd; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
+#return-to-top i { color: #333; margin: 0; position: relative; left: 22px; top: 21px; font-size: 21px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+#return-to-top:hover { background-color: <?=$highlight?>; }
+#return-to-top:hover i { color: #fff; top: 13px; }
+
+
 
 
 /********** RESPONSIVE **********/
@@ -118,6 +125,7 @@ ul a:visited { color: <?=$white?>; }
 #sidebar_menu {	display: none; }
 #container { max-width: 926px; padding: 0 16px; }
 #currentColor { margin-top: 27px; }
+#return-to-top { margin-left:-32px; }
 
 /* tablets - portrait */
 @media screen and (min-width: 644px) {
@@ -144,6 +152,7 @@ ul a:visited { color: <?=$highlight?>; }
 #sidebar_menu { display: inline; }
 #container { width: 1240px; max-width: auto; max-width: initial; padding: 0; }
 #currentColor { margin-top: 16px; }
+#return-to-top { margin-left: calc(-32px + 157px); }
 }
 
 /* @font-face shannanigens */

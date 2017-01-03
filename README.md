@@ -11,7 +11,6 @@ ToDo
 	- Own Portfolio
 - Think about categories (making, electronics, ...)
 - Add Meta Data to WordPress
-- Add back to top button or have menu button always visible
 
 Bugs (descending priority)
 - Not working in IE but working in Edge

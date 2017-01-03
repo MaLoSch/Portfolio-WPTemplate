@@ -1,26 +1,37 @@
 function doJSStuffs() {
+	// get greeting according to time
 	getGreeting();
+	// load a new quote from douglas adams
 	loadQuote();
 }
 
 function getGreeting() {
+	// get current time
 	var date = new Date();
 	var hours = date.getHours();
-	var month = date.getMonth(); 
+	var month = date.getMonth();
+	
+	// default greeting
 	var greeting = "Hello!";
-			 
+	
+	// late
 	if (hours >= 0 && hours < 5) {
 		var greeting = "Still awake?";
 	} else if (hours >= 5 && hours < 9) {
+	// mornings
 		var greeting = "Good morning!";
 	} else if (hours >= 9 && hours < 15) {
+	// during the day
 		var greeting = "Hey!";
 	} else if (hours >= 15 && hours < 19) {
+	// afternoon
 		var greeting = "Good afternoon!";
 	} else if (hours > 19) {
+	// nights
 		var greeting = "Good evening!";
 	}
-		
+	
+	// update greeting
 	document.getElementById("pushyGreeting").innerHTML = greeting;
 	document.getElementById("sidebarGreeting").innerHTML = greeting;
 }
@@ -65,8 +76,24 @@ function loadQuote() {
     $('#loadedQuote').text('"'+quotes[randno]+'"');
 }
 
+// when site is loaded > do stuff
 window.onload = doJSStuffs;
 
+// function when 'reload' button is clicked on 404 page
 $('.reload').click(function(e) {  
     loadQuote();
+});
+
+// scroll to top
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
 });
