@@ -7,7 +7,7 @@
 	 	  	
 			<div class="main"> <!-- div containing the main bulk of the site -->
 				<h1 class="highlightColor">This is the archive.</h1> <!-- get title of page -->
-				<h2>Like any good archive the archivist is on the never ending quest to find, document, and classify all projects with the ultimate goal of a complete collection... Here's everything on <span class="highlightColor">'<?php single_cat_title(); ?>'</span> so far.</h2> <!-- blurp beneath the page title -->
+				<h2>Like any good archive the archivist is on the never ending quest to find, document, and classify all projects with the ultimate goal of a complete collection... Showing projects in category: <span class="highlightColor"><?php single_cat_title(); ?></span>.</h2> <!-- blurp beneath the page title -->
 				<ul class="categories_ul"> <!-- list all categories of this WordPress site -->
 					<?php wp_list_categories( array( // create array of categories
         				'orderby' => 'name', // order categories by name
