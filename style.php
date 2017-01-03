@@ -26,7 +26,7 @@ html, body { font-family: 'bariol_regular'; font-size: 18px; background-color: #
 #footer p { margin: 16px 0 112px; float:left; font-size: 13px; }
 
 /* Headings */
-h1 { font-family: 'bariol_bold'; font-size: 21px; margin: 16px 0 32px; }
+h1 { font-family: 'bariol_regular'; font-size: 21px; margin: 16px 0 32px; }
 h2 { font-family: 'bariol_regular'; font-size: 21px; margin-bottom: 32px; }
 h3 { font-family: 'bariol_light'; font-size: 21px; margin: 32px 0 24px 0; color: <?=$highlight?>; } /* color needed for h3 on publication page */
 
@@ -41,6 +41,9 @@ a:visited { font-family: 'bariol_bold_italic'; text-decoration:underline; }
 .pushy a { color:<?=$white?>; }
 .pushy a:hover { color:<?=$white?>; }
 .pushy a:visited { color:<?=$white?>; }
+
+/* Bold type */
+.bold { font-family: 'bariol_bold'; }
 
 /* Colors */
 .highlightColor { color:<?=$highlight?>; }

@@ -13,13 +13,13 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 	<?php the_post_thumbnail('full'); ?> <!-- display the full size feature image of the current post -->
 	                <div class="project_description">
-						<p class="highlightColor">Project Description</p>
+						<p class="highlightColor bold">Project Description</p>
 						<p><?php the_field('project_description'); ?></p> <!-- accessing advanced custom field data - see: http://www.advancedcustomfields.com/ for more info -->
 						<br/>
-						<p class="highlightColor">Year</p>
+						<p class="highlightColor bold">Year</p>
 						<p><?php the_date('Y'); ?></p>
 						<br/>
-						<p class="highlightColor">Categories</p>
+						<p class="highlightColor bold">Categories</p>
 						<ul class="categories_ul">
 							<?php the_category(); ?> 
 						</ul>
