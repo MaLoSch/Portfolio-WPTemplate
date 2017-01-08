@@ -39,6 +39,7 @@
 		   	<div class="header">
 				<div class="menu-btn">&#9776; Menu</div> <!-- Menu Button -->
 				<div class="tooltip highlightColor" id="currentColor"><?php include_once 'color.php'; echo $currentColor; ?> <!-- Include color.php file in header.php to have access to the current color value -->
+					<span class="tooltiptext">Coming soon.</span>
 				</div>
 				<br class="clear">
 			</div><!-- header -->

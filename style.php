@@ -100,6 +100,8 @@ iframe { margin-bottom: 16px; }
 
 /* Tooltip */
 .tooltip { position: relative; display: inline-block; }
+.tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: rgba(0, 0, 0, 0); color: #fff; text-align: center; border-radius: 3px; padding: 5px 0; top: -5px; right: 120%; position: absolute; z-index: 100; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
+.tooltip:hover .tooltiptext { background-color: <?=$highlight?>; visibility: visible; right: 105%; }
 
 
 
