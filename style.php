@@ -98,6 +98,8 @@ iframe { margin-bottom: 16px; }
 #return-to-top:hover { background-color: <?=$highlight?>; }
 #return-to-top:hover i { color: #fff; top: 13px; }
 
+/* Tooltip */
+.tooltip { position: relative; display: inline-block; }
 
 
 

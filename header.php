@@ -38,6 +38,7 @@
 		<div id="container"> <!-- Container aka "wrapper" (needs to be named '#container' for pushy menu to work -->
 		   	<div class="header">
 				<div class="menu-btn">&#9776; Menu</div> <!-- Menu Button -->
-				<p class="highlightColor" id="currentColor"><?php include_once 'color.php'; echo $currentColor; ?></p> <!-- Include color.php file in header.php to have access to the current color value -->
-                <br class="clear">
+				<div class="tooltip highlightColor" id="currentColor"><?php include_once 'color.php'; echo $currentColor; ?> <!-- Include color.php file in header.php to have access to the current color value -->
+				</div>
+				<br class="clear">
 			</div><!-- header -->
