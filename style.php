@@ -56,7 +56,7 @@ a:visited { font-family: 'bariol_bold_italic'; text-decoration:underline; }
 .featureImg img { width: 100%; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; }
 .featureImgBackup { width: 100%; height: 176px; background: <?=$highlight?>; }
 .mask {	background-color:<?=$highlight?>; display: table; width: calc(100% - 32px); height: 144px; padding:16px; float: left; position: absolute; left: 0px; top: 0px; opacity: 0; text-align: center; transition: opacity .5s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
-.mask:hover { opacity: 1; }
+.mask:hover { opacity: 0.89; }
 .mask span { color: <?=$white?>; font-size: 21px; text-decoration: underline; display: table-cell; vertical-align: middle; }
 .excerpt { padding-right: 16px; }
 
