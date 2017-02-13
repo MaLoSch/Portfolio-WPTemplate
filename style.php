@@ -45,7 +45,7 @@ ul { list-style-type: none; }
 /* Links */
 a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: black; -webkit-animation: color-change 3s ease-in-out infinite; -moz-animation: color-change 3s ease-in-out infinite; -o-animation: color-change 3s ease-in-out infinite; -ms-animation: color-change 3s ease-in-out infinite; animation: color-change 3s ease-in-out infinite; }
 a:hover { color:<?=$highlight?>; border-bottom: 0px; }
-a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: black; -webkit-animation: color-change 3s ease-in-out infinite; -moz-animation: color-change 3s ease-in-out infinite; -o-animation: color-change 3s ease-in-out infinite; -ms-animation: color-change 3s ease-in-out infinite; animation: color-change 3s ease-in-out infinite; }
+a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; -webkit-animation: color-change 3s ease-in-out infinite; -moz-animation: color-change 3s ease-in-out infinite; -o-animation: color-change 3s ease-in-out infinite; -ms-animation: color-change 3s ease-in-out infinite; animation: color-change 3s ease-in-out infinite; }
 li a { border-bottom: 0px; }
 .pushy a { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; }
 .pushy a:hover { color:<?=$white?>; border-bottom: 0px; }
@@ -109,33 +109,28 @@ iframe { margin-bottom: 16px; }
 /********** ANIMATION **********/
 
 @-webkit-keyframes color-change {
-	0% { border-bottom-color: black; }
-	50% { border-bottom-color: <?=$highlight?>; }
-	100% { border-bottom-color: black; }
+	30%, 70% { border-bottom-color: <?=$highlight?>; }
+	50% { border-bottom-color: black; }
 }
 
 @-moz-keyframes color-change {
-	0% { border-bottom-color: black; }
-	50% { border-bottom-color: <?=$highlight?>; }
-	100% { border-bottom-color: black; }
+	30%, 70% { border-bottom-color: <?=$highlight?>; }
+	50% { border-bottom-color: black; }
 }
 
 @-ms-keyframes color-change {
-	0% { border-bottom-color: black; }
-	50% { border-bottom-color: <?=$highlight?>; }
-	100% { border-bottom-color: black; }
+	30%, 70% { border-bottom-color: <?=$highlight?>; }
+	50% { border-bottom-color: black; }
 }
 
 @-o-keyframes color-change {
-	0% { border-bottom-color: black; }
-	50% { border-bottom-color: <?=$highlight?>; }
-	100% { border-bottom-color: black; }
+	30%, 70% { border-bottom-color: <?=$highlight?>; }
+	50% { border-bottom-color: black; }
 }
 
 @keyframes color-change {
-	0% { border-bottom-color: black; }
-	50% { border-bottom-color: <?=$highlight?>; }
-	100% { border-bottom-color: black; }
+	30%, 70% { border-bottom-color: <?=$highlight?>; }
+	50% { border-bottom-color: black; }
 }
 
 
