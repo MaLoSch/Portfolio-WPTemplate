@@ -1,50 +1,54 @@
 		<!-- This is the 'Portfolio' page (front-page.php) -->
-		<?php 
+		<?php
 			get_header(); // get header.php file
 		?>
-			
+
 			<div id="sidebar_menu"> <!-- create div for sidebar -->
-				<?php 
+				<?php
 					get_sidebar(); // get sidebar.php
 				?>
 			</div><!-- sidebar_menu -->
-	 	  	
+
 			<div class="main"> <!-- create div for main bulk of page -->
 				<h1 class="highlightColor"><?php the_field('pagetagline'); ?></h1> <!-- get title of page (portfolio) -->
-				<h2 ><?php echo get_post_meta($post->ID, 'PageIntro', true); ?></h2> <!-- get post meta data -->             
-                
+				<h2 ><?php echo get_post_meta($post->ID, 'PageIntro', true); ?></h2> <!-- get post meta data -->
+
 				<h3 class="highlightColor">Portfolio</h3>
                 <!-- Custom WP Query -->
 				<!-- <?php
 					query_posts(array( // Create a custom WP query
 						'category_name' => 'Portfolio', // look for posts in the category 'Portfolio'
-						'posts_per_page' => '-1' // display all posts (-1)					
-					)); 
+						'posts_per_page' => '-1' // display all posts (-1)
+					));
 				?>-->
- 				<?php 
+ 				<?php
 					if(have_posts()):
 						while (have_posts()):
 							the_post();
 				?>
 								<div class="projectPanel">
-				            		<div class="featureProject">
+					            		<div class="featureProject">
 										<div class="featureImg">
-					                    	<?php 
-												if ( has_post_thumbnail() ) {
-													the_post_thumbnail('thumbnail');
-												} else { 
-											?>
-													<div class="featureImgBackup"></div>
-											<?php 
-												}
-											?>
-				                			<a href="<?php the_permalink() ?>">
-			                            		<div class="mask">
-													<span><?php echo get_the_title(); ?></span>
+						                    	<?php if ( has_post_thumbnail() ) {
+												the_post_thumbnail('thumbnail');
+											} else { ?>
+												<div class="featureImgBackup"></div>
+											<?php } ?>
+								    			<a href="<?php the_permalink() ?>">
+				                            			<div class="mask">
+													<?php if (has_tag('WIP')) { ?>
+														<span><?php echo get_the_title(); ?> (WIP)</span> <!-- get title of page -->
+													<?php } else { ?>
+														<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
+													<?php } ?>
 												</div>
-			                            	</a>
-				                		</div>
-										<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a>
+				                            		</a>
+					                		</div>
+										<?php if (has_tag('WIP')) { ?>
+											<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?> (WIP)</a> <!-- get title of page -->
+										<?php } else { ?>
+											<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> <!-- get title of page -->
+										<?php } ?>
 										<p class="excerpt"><?php echo(get_the_excerpt()); ?></p>
 									</div>
 								</div>
@@ -52,7 +56,7 @@
 						endwhile;
 					endif;
 				?>
-				
+
                 <?php
 					get_footer(); // get footer.php file
 				?>

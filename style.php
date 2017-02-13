@@ -1,4 +1,4 @@
-<?php	
+<?php
 	header("Content-type: text/css");
 
 	include_once 'color.php'; // include color.php file to have access to $currentColor
@@ -35,9 +35,10 @@ h3 { font-family: 'bariol_light'; font-size: 21px; margin: 32px 0 24px 0; color:
 ul { list-style-type: none; }
 
 /* Links */
-a { font-family: 'bariol_bold_italic'; text-decoration:underline; }
-a:hover { color:<?=$highlight?>; }
-a:visited { font-family: 'bariol_bold_italic'; text-decoration:underline; }
+a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; }
+a:hover { color:<?=$highlight?>; border-bottom: 0px; }
+a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; }
+li a { border-bottom: 0px; }
 .pushy a { color:<?=$white?>; }
 .pushy a:hover { color:<?=$white?>; }
 .pushy a:visited { color:<?=$white?>; }
@@ -57,12 +58,12 @@ a:visited { font-family: 'bariol_bold_italic'; text-decoration:underline; }
 .featureImgBackup { width: 100%; height: 176px; background: <?=$highlight?>; }
 .mask {	background-color:<?=$highlight?>; display: table; width: calc(100% - 32px); height: 144px; padding:16px; float: left; position: absolute; left: 0px; top: 0px; opacity: 0; text-align: center; transition: opacity .5s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 .mask:hover { opacity: 0.89; }
-.mask span { color: <?=$white?>; font-size: 21px; text-decoration: underline; display: table-cell; vertical-align: middle; }
+.mask span { color: <?=$white?>; font-size: 21px; display: table-cell; vertical-align: middle; }
 .excerpt { padding-right: 16px; }
 
 /* Project page */
 .project_description { max-width: 100%; margin: 0 0 16px 0; float: left; }
-.project_quote { width: calc(100% - 32px); float: left; text-align: center; border: 1px; border-color: <?=$highlight?>; color: <?=$highlight?>; margin: 16px 0 32px 0; border-style: solid none; padding: 16px; font-size: 36px; font-family: 'bariol_bold_italic'; }
+.project_quote { width: calc(100% - 32px); float: left; text-align: center; border: 1px; border-color: <?=$highlight?>; color: <?=$highlight?>; margin: 16px 0 32px 0; border-style: solid none; padding: 16px; font-size: 26px; font-family: 'bariol_regular_italic'; }
 .date { width: 298px; float: left; margin: 0 0 16px 0; }
 
 /* Images */
@@ -88,12 +89,12 @@ iframe { margin-bottom: 16px; }
 /* Archive */
 .categories_ul li { display: inline-block; }
 .categories_ul li a { display:block; padding: 0px 10px; background-color: #ddd; color: #333; font-size:13px; font-family: 'bariol_regular'; transition: all 0.25s ease-in-out; margin-bottom: 4px; }
-.categories_ul li a:visited { background-color: #ddd; color: #333; } 
+.categories_ul li a:visited { background-color: #ddd; color: #333; }
 .categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
 .categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
 /* Back to top button */
-#return-to-top { position: fixed; bottom: 16px; left: 50%; background-color: #ddd; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
+#return-to-top { border-bottom: 0px; position: fixed; bottom: 16px; left: 50%; background-color: #ddd; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
 #return-to-top i { color: #333; margin: 0; position: relative; left: 22px; top: 21px; font-size: 21px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 #return-to-top:hover { background-color: <?=$highlight?>; }
 #return-to-top:hover i { color: #fff; top: 13px; }
@@ -138,12 +139,12 @@ ul a:visited { color: <?=$white?>; }
 @media screen and (min-width: 644px) {
 .featureProject { width: 50%; }
 }
- 
+
 /* tablets - landscape */
-@media screen and (min-width: 958px) { 
+@media screen and (min-width: 958px) {
 .featureProject { width: 33.3%; }
 }
- 
+
 /* desktops*/
 @media screen and (min-width: 1272px) {
 /* Navigation panel */
