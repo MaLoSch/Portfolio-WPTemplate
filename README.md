@@ -1,9 +1,9 @@
 # Portfolio-WPTemplate
 WordPress Template for online portfolio - malosch.com
 
-ToDo
+To Do
 - Clean up spacing between elements
-- Change fonttypes so it doesn't look weird in Firefox
+- Change font types so it doesn't look weird in Firefox
 - Add missing pictures and descriptions and filters
 - Add missing projects
 	- CHI program
@@ -14,17 +14,15 @@ ToDo
 
 Bugs (descending priority)
 - Not working in IE but working in Edge
-	- Do I care? No. IE is dead but I should add a notifaction for people using IE.
+	- Do I care? No. IE is dead but I should add a notification for people using IE.
 - Bottom Margin after iFrame > 16 px
 - Look for .project_quotes bugs in Edge, Chrome, Firefox, and Safari
-- Finetune colors
+- Fine tune colors
 
-Wishlist
+Wish list
 - Highlight color does slight animation when page is loaded for the first time. Similar to http://jsfiddle.net/5r8BY/
 	- Color change according to current time of the day. (Mornings it goes from dark to bright and in the evening vice versa)
-- Change the way links are presented. Underline should be colored while the text is black. On mouse-over the text changes to the color and the underline disappears.
-	- Use border-bottom: 1px solid #color;
-	
+
 Current Plugins
 - Advanced Custom Fields https://wordpress.org/plugins/advanced-custom-fields/
 - All-in-One WP Migration https://wordpress.org/plugins/all-in-one-wp-migration/

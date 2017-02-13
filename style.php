@@ -4,6 +4,7 @@
 	include_once 'color.php'; // include color.php file to have access to $currentColor
 	$highlight = $currentColor;
 	$white = '#fff';
+	$snow = '#fefefe';
 ?>
 
 /*
@@ -19,7 +20,7 @@ Author URI: http://malosch.com
 
 /* General structure */
 * {	margin: 0; padding: 0; color: #333; -webkit-font-smoothing: antialiased; }
-html, body { font-family: 'bariol_regular'; font-size: 18px; background-color: #efefef; overflow-x: hidden; }
+html, body { font-family: 'bariol_regular'; font-size: 18px; background-color: #fcfcfc; overflow-x: hidden; }
 .clear { clear: both; }
 .header { height: auto; } /* header including the colored line + respsonsive menu button + hex color code */
 #headerLine { height: 1px; width: 100%; background-color:<?=$highlight?>; } /* colored line on top of page */
@@ -32,33 +33,37 @@ h3 { font-family: 'bariol_light'; font-size: 21px; margin: 32px 0 24px 0; color:
 
 /* Navigation panel */
 .pushy { background: <?=$highlight?>; } /* pushy (mobile navigation) background */
+.white { color: <?=$snow?>; } /* used by the greeting (hi, hey, good evening, ...) in the pushy navigation */
+.pushy h3 { color: <?=$snow?>; }
+.pushy div * { color: <?=$snow?>; }
 ul { list-style-type: none; }
 
-/* Links */
-a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; }
-a:hover { color:<?=$highlight?>; border-bottom: 0px; }
-a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; }
-li a { border-bottom: 0px; }
-.pushy a { color:<?=$white?>; }
-.pushy a:hover { color:<?=$white?>; }
-.pushy a:visited { color:<?=$white?>; }
+/* Ditty News Ticker */
+.mtphr-dnt h3 { font-family: 'bariol_regular'; margin: 48px 0 0 0; }
+.mtphr-dnt-tick-contents { padding-bottom: 1px; }
 
-/* Bold type */
-.bold { font-family: 'bariol_bold'; }
+/* Links */
+a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: black; -webkit-animation: color-change 3s ease-in-out infinite; -moz-animation: color-change 3s ease-in-out infinite; -o-animation: color-change 3s ease-in-out infinite; -ms-animation: color-change 3s ease-in-out infinite; animation: color-change 3s ease-in-out infinite; }
+a:hover { color:<?=$highlight?>; border-bottom: 0px; }
+a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: black; -webkit-animation: color-change 3s ease-in-out infinite; -moz-animation: color-change 3s ease-in-out infinite; -o-animation: color-change 3s ease-in-out infinite; -ms-animation: color-change 3s ease-in-out infinite; animation: color-change 3s ease-in-out infinite; }
+li a { border-bottom: 0px; }
+.pushy a { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; }
+.pushy a:hover { color:<?=$white?>; border-bottom: 0px; }
+.pushy a:visited { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; }
+.pushy li a { border-bottom: 0px; }
 
 /* Colors */
 .highlightColor { color:<?=$highlight?>; }
-.white { color: <?=$white?>; }
-::-moz-selection { background: <?=$highlight?>; color:<?=$white?>; } /* use highlight color as background color for selections */
-::selection { background: <?=$highlight?>; color:<?=$white?>; } /* use highlight color as background color for selections */
+::-moz-selection { background: <?=$highlight?>; color:<?=$snow?>; } /* use highlight color as background color for selections */
+::selection { background: <?=$highlight?>; color:<?=$snow?>; } /* use highlight color as background color for selections */
 
 /* Project links */
 .featureImg { width:100%; height: 176px; overflow:hidden; position:relative; margin: 0 0 8px 0; display: inline-block; }
 .featureImg img { width: 100%; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; }
 .featureImgBackup { width: 100%; height: 176px; background: <?=$highlight?>; }
-.mask {	background-color:<?=$highlight?>; display: table; width: calc(100% - 32px); height: 144px; padding:16px; float: left; position: absolute; left: 0px; top: 0px; opacity: 0; text-align: center; transition: opacity .5s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+.mask { background-color:<?=$highlight?>; display: table; width: calc(100% - 32px); height: 144px; padding:16px; float: left; position: absolute; left: 0px; top: 0px; opacity: 0; text-align: center; transition: opacity .5s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 .mask:hover { opacity: 0.89; }
-.mask span { color: <?=$white?>; font-size: 21px; display: table-cell; vertical-align: middle; }
+.mask span { color: <?=$white?>; font-size: 21px; display: table-cell; vertical-align: middle; top: -10px; }
 .excerpt { padding-right: 16px; }
 
 /* Project page */
@@ -97,12 +102,41 @@ iframe { margin-bottom: 16px; }
 #return-to-top { border-bottom: 0px; position: fixed; bottom: 16px; left: 50%; background-color: #ddd; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
 #return-to-top i { color: #333; margin: 0; position: relative; left: 22px; top: 21px; font-size: 21px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 #return-to-top:hover { background-color: <?=$highlight?>; }
-#return-to-top:hover i { color: #fff; top: 13px; }
+#return-to-top:hover i { color: <?=$white?>; top: 13px; }
 
-/* Tooltip */
-.tooltip { position: relative; display: inline-block; }
-.tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: rgba(0, 0, 0, 0); color: #fff; text-align: center; border-radius: 3px; padding: 5px 0; top: -5px; right: 120%; position: absolute; z-index: 100; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
-.tooltip:hover .tooltiptext { background-color: <?=$highlight?>; visibility: visible; right: 105%; }
+
+
+/********** ANIMATION **********/
+
+@-webkit-keyframes color-change {
+	0% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$highlight?>; }
+	100% { border-bottom-color: black; }
+}
+
+@-moz-keyframes color-change {
+	0% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$highlight?>; }
+	100% { border-bottom-color: black; }
+}
+
+@-ms-keyframes color-change {
+	0% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$highlight?>; }
+	100% { border-bottom-color: black; }
+}
+
+@-o-keyframes color-change {
+	0% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$highlight?>; }
+	100% { border-bottom-color: black; }
+}
+
+@keyframes color-change {
+	0% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$highlight?>; }
+	100% { border-bottom-color: black; }
+}
 
 
 
@@ -116,7 +150,7 @@ ul a:visited { text-decoration: none; }
 .menu-btn { background-color:<?=$highlight?>; cursor: pointer; padding: 3px 8px 5px; color: <?=$white?>; margin: 24px 0 32px; }
 .main { float: left; }
 .featureProject { margin: 0 0 32px 0; float: left; }
-#sidebar_menu {	width: 282px; padding: 0 32px 0 0; float: left; }
+#sidebar_menu { width: 282px; padding: 0 32px 0 0; float: left; }
 #container { margin: 0 auto; text-align: left; overflow: hidden; } /* need overflow: hidden; to avoid Google Chrome bug. See - http://stackoverflow.com/questions/15550205/strange-rendering-issue-in-chrome-with-floats-in-a-div-with-margin-top */
 #currentColor { float: right; }
 
@@ -164,17 +198,6 @@ ul a:visited { color: <?=$highlight?>; }
 }
 
 /* @font-face shannanigens */
-@font-face {
-    font-family: 'bariol_bold';
-    src: url('assets/fonts/bariol_bold-webfont.eot');
-    src: url('assets/fonts/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/bariol_bold-webfont.woff2') format('woff2'),
-         url('assets/fonts/bariol_bold-webfont.woff') format('woff'),
-         url('assets/fonts/bariol_bold-webfont.ttf') format('truetype'),
-         url('assets/fonts/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'bariol_light';
@@ -198,31 +221,6 @@ ul a:visited { color: <?=$highlight?>; }
          url('assets/fonts/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'bariol_thin';
-    src: url('assets/fonts/bariol_thin-webfont.eot');
-    src: url('assets/fonts/bariol_thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/bariol_thin-webfont.woff2') format('woff2'),
-         url('assets/fonts/bariol_thin-webfont.woff') format('woff'),
-         url('assets/fonts/bariol_thin-webfont.ttf') format('truetype'),
-         url('assets/fonts/bariol_thin-webfont.svg#bariolthin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'bariol_bold_italic';
-    src: url('assets/fonts/bariol_bold_italic-webfont.eot');
-    src: url('assets/fonts/bariol_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/bariol_bold_italic-webfont.woff2') format('woff2'),
-         url('assets/fonts/bariol_bold_italic-webfont.woff') format('woff'),
-         url('assets/fonts/bariol_bold_italic-webfont.ttf') format('truetype'),
-         url('assets/fonts/bariol_bold_italic-webfont.svg#bariol_boldbold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 @font-face {

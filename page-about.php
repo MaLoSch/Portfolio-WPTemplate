@@ -1,9 +1,9 @@
 		<?php get_header(); ?> <!-- get header.php file -->
-			
+
 			<div id="sidebar_menu">
 				<?php get_sidebar(); ?> <!-- get sidebar.php -->
 			</div><!-- sidebar_menu -->
-	 	  	
+
 			<div class="main">
 				<h1 class="highlightColor"><?php the_field('pagetagline'); ?></h1> <!-- get title of page -->
 				<h2><?php echo get_post_meta($post->ID, 'PageIntro', true); ?></h2> <!-- get post meta data -->
@@ -21,5 +21,5 @@
                     <p><?php the_field('contact'); ?></p>
                 </div>
                 <br class="clear" />
-                
+
                 <?php get_footer(); ?> <!-- get footer.php file -->
