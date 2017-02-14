@@ -109,27 +109,27 @@ iframe { margin-bottom: 16px; }
 /********** ANIMATION **********/
 
 @-webkit-keyframes color-change {
-	35%, 65% { border-bottom-color: <?=$highlight?>; }
+	40%, 60% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: black; }
 }
 
 @-moz-keyframes color-change {
-	35%, 65% { border-bottom-color: <?=$highlight?>; }
+	40%, 60% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: black; }
 }
 
 @-ms-keyframes color-change {
-	35%, 65% { border-bottom-color: <?=$highlight?>; }
+	40%, 60% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: black; }
 }
 
 @-o-keyframes color-change {
-	35%, 65% { border-bottom-color: <?=$highlight?>; }
+	40%, 60% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: black; }
 }
 
 @keyframes color-change {
-	35%, 65% { border-bottom-color: <?=$highlight?>; }
+	40%, 60% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: black; }
 }
 
