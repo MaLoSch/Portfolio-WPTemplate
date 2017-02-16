@@ -11,9 +11,8 @@
 		<?php include_once("analyticstracking.php") ?>
 
  		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/pushy.min.js"></script> <!-- link to pushy.js file -->
-        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/JSStuff.js"></script> <!-- link to JSStuff.js file -->
+          <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/JSStuff.js"></script> <!-- link to JSStuff.js file -->
 
 		<?php wp_footer(); ?> <!-- Necessary wp footer hook -->
-
 	</body>
 </html>

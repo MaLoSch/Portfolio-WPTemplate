@@ -12,7 +12,7 @@
 					<?php wp_list_categories( array(
         				'orderby' => 'name',
 						'title_li' => '', // don't show a title over the category links
-						'exclude' => array(19) // exclude 'portfolio' from categories (since I have a separate page for them)
+						'exclude' => array(40) // exclude 'portfolio' from categories (since I have a separate page for them)
 				    ) ); ?>
 				</ul>
                 <?php foreach(posts_by_year() as $year => $posts) : ?>
@@ -28,16 +28,16 @@
 							<?php } ?>
 	                			<a href="<?php the_permalink() ?>">
                                  		<div class="mask">
-                                             <?php if (has_tag('WIP')) { ?>
-                                                  <span><?php echo get_the_title(); ?> (WIP)</span> <!-- get title of page -->
+                                             <?php if (has_tag('Ongoing')) { ?>
+                                             	<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
                                              <?php } else { ?>
                                                   <span><?php echo get_the_title(); ?></span> <!-- get title of page -->
                                              <?php } ?>
      							</div>
                             	     </a>
                 		     </div>
-                              <?php if (has_tag('WIP')) { ?>
-                                   <a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?> (WIP)</a> <!-- get title of page -->
+                              <?php if (has_tag('Ongoing')) { ?>
+                                   <a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> (ongoing) <!-- get title of page -->
                               <?php } else { ?>
                                    <a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> <!-- get title of page -->
                               <?php } ?>

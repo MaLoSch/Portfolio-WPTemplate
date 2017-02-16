@@ -30,6 +30,7 @@ html, body { font-family: 'bariol_regular'; font-size: 18px; background-color: #
 h1 { font-family: 'bariol_regular'; font-size: 21px; margin: 16px 0 32px; }
 h2 { font-family: 'bariol_regular'; font-size: 21px; margin-bottom: 32px; }
 h3 { font-family: 'bariol_light'; font-size: 21px; margin: 32px 0 24px 0; color: <?=$highlight?>; } /* color needed for h3 on publication page */
+.light { font-family: 'bariol_light'; }
 
 /* Navigation panel */
 .pushy { background: <?=$highlight?>; } /* pushy (mobile navigation) background */
@@ -47,9 +48,9 @@ a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1
 a:hover { color:<?=$highlight?>; border-bottom: 0px; }
 a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; -webkit-animation: color-change 5s ease-in-out infinite; -moz-animation: color-change 5s ease-in-out infinite; -o-animation: color-change 5s ease-in-out infinite; -ms-animation: color-change 5s ease-in-out infinite; animation: color-change 5s ease-in-out infinite; }
 li a { border-bottom: 0px; }
-.pushy a { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; }
+.pushy a { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; -webkit-animation: color-change-pushy 5s ease-in-out infinite; -moz-animation: color-change-pushy 5s ease-in-out infinite; -o-animation: color-change-pushy 5s ease-in-out infinite; -ms-animation: color-change-pushy 5s ease-in-out infinite; animation: color-change-pushy 5s ease-in-out infinite; }
 .pushy a:hover { color:<?=$white?>; border-bottom: 0px; }
-.pushy a:visited { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; }
+.pushy a:visited { color:<?=$white?>; border-bottom: 1px solid <?=$white?>; -webkit-animation: color-change-pushy 5s ease-in-out infinite; -moz-animation: color-change-pushy 5s ease-in-out infinite; -o-animation: color-change-pushy 5s ease-in-out infinite; -ms-animation: color-change-pushy 5s ease-in-out infinite; animation: color-change-pushy 5s ease-in-out infinite; }
 .pushy li a { border-bottom: 0px; }
 
 /* Colors */
@@ -86,21 +87,21 @@ img { vertical-align: top; max-width: 100%; height: auto; margin: 0 0 16px 0; fl
 #bio { width: 100%; margin: 0 0 48px 0; }
 
 /* Videos */
-iframe { margin-bottom: 16px; }
+iframe { margin-bottom: 11px; } <!-- usually margin-bottom is 16px but the iframe has a default margin of 5px which I can't find/remove -->
 
 /* Publications */
 .csl-bib-body { padding-left: 0 !important; text-indent: 0 !important; line-height: normal !important; }
 
 /* Archive */
 .categories_ul li { display: inline-block; }
-.categories_ul li a { display:block; padding: 0px 10px; background-color: #ddd; color: #333; font-size:13px; font-family: 'bariol_regular'; transition: all 0.25s ease-in-out; margin-bottom: 4px; }
-.categories_ul li a:visited { background-color: #ddd; color: #333; }
+.categories_ul li a { display:block; background-color: <?=$white?>; padding: 0px 10px; color: <?=$highlight?>; border: 1px solid <?=$highlight?>; font-size:13px; font-family: 'bariol_regular'; transition: all 0.25s ease-in-out; margin-top: 4px; -webkit-animation: none; -moz-animation: none; -o-animation: none; -ms-animation: none; animation: none; }
+.categories_ul li a:visited { color: <?=$highlight?>; border: 1px solid <?=$highlight?>; -webkit-animation: none; -moz-animation: none; -o-animation: none; -ms-animation: none; animation: none; }
 .categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
 .categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
 /* Back to top button */
-#return-to-top { border-bottom: 0px; position: fixed; bottom: 16px; left: 50%; background-color: #ddd; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
-#return-to-top i { color: #333; margin: 0; position: relative; left: 22px; top: 21px; font-size: 21px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+#return-to-top { border: 1px solid <?=$highlight?>; background-color: <?=$white?>; position: fixed; bottom: 16px; left: 50%; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; -webkit-animation: none; -moz-animation: none; -o-animation: none; -ms-animation: none; animation: none; }
+#return-to-top i { color: <?=$highlight?>; margin: 0; position: relative; left: 22px; top: 21px; font-size: 21px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 #return-to-top:hover { background-color: <?=$highlight?>; }
 #return-to-top:hover i { color: <?=$white?>; top: 13px; }
 
@@ -110,30 +111,68 @@ iframe { margin-bottom: 16px; }
 
 @-webkit-keyframes color-change {
 	40%, 60% { border-bottom-color: <?=$highlight?>; }
-	50% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @-moz-keyframes color-change {
 	40%, 60% { border-bottom-color: <?=$highlight?>; }
-	50% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @-ms-keyframes color-change {
 	40%, 60% { border-bottom-color: <?=$highlight?>; }
-	50% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @-o-keyframes color-change {
 	40%, 60% { border-bottom-color: <?=$highlight?>; }
-	50% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @keyframes color-change {
 	40%, 60% { border-bottom-color: <?=$highlight?>; }
-	50% { border-bottom-color: black; }
+	50% { border-bottom-color: <?=$snow?>; }
+}
+
+/* Animation for links in the pushy nav bar */
+
+@-webkit-keyframes color-change-pushy {
+	40%, 60% { border-bottom-color: <?=$white?>; }
+	50% { border-bottom-color: <?=$highlight?>; }
+}
+
+@-webkit-keyframes color-change-pushy {
+	40%, 60% { border-bottom-color: <?=$white?>; }
+	50% { border-bottom-color: <?=$highlight?>; }
+}
+
+@-webkit-keyframes color-change-pushy {
+	40%, 60% { border-bottom-color: <?=$white?>; }
+	50% { border-bottom-color: <?=$highlight?>; }
+}
+
+@-webkit-keyframes color-change-pushy {
+	40%, 60% { border-bottom-color: <?=$white?>; }
+	50% { border-bottom-color: <?=$highlight?>; }
+}
+
+@-webkit-keyframes color-change-pushy {
+	40%, 60% { border-bottom-color: <?=$white?>; }
+	50% { border-bottom-color: <?=$highlight?>; }
 }
 
 
+
+/********** Outdated Browser **********/
+
+#outdatedBrowser_outerDiv { display: inline-block; top: 0; position: absolute; height: 100%; width: 100%; text-align: center; background-color: <?=$highlight?>; }
+#outdatedBrowser_middleDiv { vertical-align: middle; display: inline-block; top: 50%; position: relative; }
+#outdatedBrowser_innerDiv { width: 100%; display: inline-block; top: -50%; position: relative; }
+#outdatedBrowser_innerDiv h1 { font-size: 34px; color: <?=$snow?>; }
+#outdatedBrowser_innerDiv p { font-size: 21px; padding: 0 16px; color: <?=$snow?>; }
+#outdatedBrowser_innerDiv a { width: 160px; font-size: 16px; margin: 0 8px 8px 0; font-family: 'bariol_regular'; display: inline-block; padding: 8px 0; border: 1px solid <?=$white?>; color: <?=$white?>; }
+#outdatedBrowser_innerDiv a:hover { background-color: <?=$white?>; border-color: <?=$white?>; color: <?=$highlight?>; }
+#outdatedBrowser_innerDiv a:visited { border-color: <?=$white?>; color: <?=$white?>; }
 
 /********** RESPONSIVE **********/
 
@@ -159,7 +198,7 @@ ul a:visited { color: <?=$white?>; }
 .menu-btn { display: inline-block; }
 .main { width: 100%; }
 .featureProject { width: 100%; }
-#sidebar_menu {	display: none; }
+#sidebar_menu { display: none; }
 #container { max-width: 926px; padding: 0 16px; }
 #currentColor { margin-top: 27px; }
 #return-to-top { margin-left:-32px; }
@@ -192,7 +231,9 @@ ul a:visited { color: <?=$highlight?>; }
 #return-to-top { margin-left: calc(-32px + 157px); }
 }
 
-/* @font-face shannanigens */
+
+
+/********** @FONT-FACE **********/
 
 @font-face {
     font-family: 'bariol_light';

@@ -36,16 +36,16 @@
 											<?php } ?>
 								    			<a href="<?php the_permalink() ?>">
 				                            			<div class="mask">
-													<?php if (has_tag('WIP')) { ?>
-														<span><?php echo get_the_title(); ?> (WIP)</span> <!-- get title of page -->
+													<?php if (has_tag('Ongoing')) { ?>
+														<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
 													<?php } else { ?>
 														<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
 													<?php } ?>
 												</div>
 				                            		</a>
 					                		</div>
-										<?php if (has_tag('WIP')) { ?>
-											<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?> (WIP)</a> <!-- get title of page -->
+										<?php if (has_tag('Ongoing')) { ?>
+											<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> (ongoing) <!-- get title of page -->
 										<?php } else { ?>
 											<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> <!-- get title of page -->
 										<?php } ?>

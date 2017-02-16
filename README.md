@@ -1,23 +1,13 @@
 # Portfolio-WPTemplate
-WordPress Template for online portfolio - malosch.com
+WordPress Template for my online portfolio. See it in action on http://www.malosch.com.
 
 To Do
-- Change categories
-- Clean up spacing between elements
-- Change font types so it doesn't look weird in Firefox
 - Add missing pictures and descriptions and filters
 - Add missing projects
 	- CHI program
 	- DIS Website
 	- Own Portfolio
-- Think about categories (making, electronics, ...)
-- Add Meta Data to WordPress
-
-Bugs (descending priority)
-- Not working in IE but working in Edge
-	- Do I care? No. IE is dead but I should add a notification for people using IE.
-- Bottom Margin after iFrame > 16 px
-- Look for .project_quotes bugs in Edge, Chrome, Firefox, and Safari
+- Clean up quotes from Douglas Adams
 
 Current Plugins
 - Advanced Custom Fields https://wordpress.org/plugins/advanced-custom-fields/
@@ -29,3 +19,7 @@ Current Plugins
 - Thumbnail Cleaner https://wordpress.org/plugins/thumbnail-cleaner/
 - wpautop-control https://wordpress.org/plugins/wpautop-control/
 - Zotpress https://wordpress.org/plugins/zotpress/
+- PHP Browser Detection https://en-ca.wordpress.org/plugins/php-browser-detection/
+- Head Meta Data https://en-ca.wordpress.org/plugins/head-meta-data/screenshots/
+
+Software, User Experience, Installation, Prototyping, Print, Visual Identity, App, Design Research, Programming, Hardware, Experiment, Web, Service, Thesis, Portfolio
