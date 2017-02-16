@@ -36,11 +36,7 @@
 											<?php } ?>
 								    			<a href="<?php the_permalink() ?>">
 				                            			<div class="mask">
-													<?php if (has_tag('Ongoing')) { ?>
-														<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
-													<?php } else { ?>
-														<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
-													<?php } ?>
+													<span><?php echo get_the_title(); ?></span> <!-- get title of page -->
 												</div>
 				                            		</a>
 					                		</div>

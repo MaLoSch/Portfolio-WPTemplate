@@ -12,7 +12,7 @@
 					<?php wp_list_categories( array( // create array of categories
         				'orderby' => 'name', // order categories by name
 						'title_li' => '', // don't show a title over the category links
-						'exclude' => array(19) // exclude 'portfolio' from categories (since I have a separate page for them)
+						'exclude' => array(40) // exclude 'portfolio' from categories (since I have a separate page for them)
 				    ) ); ?>
 				</ul>
 
@@ -28,19 +28,23 @@
 						<div class="projectPanel"> <!-- div usually contains a single project but is here used to have the right width for the single project links -->
 							<div class="featureProject"> <!-- a single post link (image, title, and excerpt (if available) -->
 								<div class="featureImg"> <!-- div containing post featured image -->
-		                    		<?php if ( has_post_thumbnail() ) { // if there is a thumbnail
-										the_post_thumbnail('thumbnail'); // take the thumbnail
-									} else { ?> <!-- if there is no thumbnail -->
-										<div class="featureImgBackup"></div> <!-- create a div -->
-									<?php } ?>
-	                				<a href="<?php the_permalink() ?>"> <!-- link to the posts -->
-                            			<div class="mask"> <!-- mask for image on mouseOver -->
-											<span><?php echo get_the_title(); ?></span> <!-- display title of post on mouse over -->
-										</div>
-                           		 	</a>
-	                			</div>
-								<a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> <!-- link to the posts beneath the featured image -->
-							</div>
+     		                    		<?php if ( has_post_thumbnail() ) { // if there is a thumbnail
+     										the_post_thumbnail('thumbnail'); // take the thumbnail
+     									} else { ?> <!-- if there is no thumbnail -->
+     										<div class="featureImgBackup"></div> <!-- create a div -->
+     								<?php } ?>
+     	                				<a href="<?php the_permalink() ?>"> <!-- link to the posts -->
+                                 			     <div class="mask"> <!-- mask for image on mouseOver -->
+     									     <span><?php echo get_the_title(); ?></span> <!-- display title of post on mouse over -->
+     								     </div>
+                                		 	</a>
+	                			     </div>
+                                        <?php if (has_tag('Ongoing')) { ?>
+                                             <a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> (ongoing) <!-- get title of page -->
+                                        <?php } else { ?>
+                                             <a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> <!-- get title of page -->
+                                        <?php } ?>
+                                   </div>
 						</div>
 
 					<?php

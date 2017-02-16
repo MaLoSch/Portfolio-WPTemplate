@@ -110,54 +110,54 @@ iframe { margin-bottom: 11px; } <!-- usually margin-bottom is 16px but the ifram
 /********** ANIMATION **********/
 
 @-webkit-keyframes color-change {
-	40%, 60% { border-bottom-color: <?=$highlight?>; }
+	35%, 65% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @-moz-keyframes color-change {
-	40%, 60% { border-bottom-color: <?=$highlight?>; }
+	35%, 65% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @-ms-keyframes color-change {
-	40%, 60% { border-bottom-color: <?=$highlight?>; }
+	35%, 65% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @-o-keyframes color-change {
-	40%, 60% { border-bottom-color: <?=$highlight?>; }
+	35%, 65% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: <?=$snow?>; }
 }
 
 @keyframes color-change {
-	40%, 60% { border-bottom-color: <?=$highlight?>; }
+	35%, 65% { border-bottom-color: <?=$highlight?>; }
 	50% { border-bottom-color: <?=$snow?>; }
 }
 
 /* Animation for links in the pushy nav bar */
 
 @-webkit-keyframes color-change-pushy {
-	40%, 60% { border-bottom-color: <?=$white?>; }
+	35%, 65% { border-bottom-color: <?=$white?>; }
 	50% { border-bottom-color: <?=$highlight?>; }
 }
 
 @-webkit-keyframes color-change-pushy {
-	40%, 60% { border-bottom-color: <?=$white?>; }
+	35%, 65% { border-bottom-color: <?=$white?>; }
 	50% { border-bottom-color: <?=$highlight?>; }
 }
 
 @-webkit-keyframes color-change-pushy {
-	40%, 60% { border-bottom-color: <?=$white?>; }
+	35%, 65% { border-bottom-color: <?=$white?>; }
 	50% { border-bottom-color: <?=$highlight?>; }
 }
 
 @-webkit-keyframes color-change-pushy {
-	40%, 60% { border-bottom-color: <?=$white?>; }
+	35%, 65% { border-bottom-color: <?=$white?>; }
 	50% { border-bottom-color: <?=$highlight?>; }
 }
 
 @-webkit-keyframes color-change-pushy {
-	40%, 60% { border-bottom-color: <?=$white?>; }
+	35%, 65% { border-bottom-color: <?=$white?>; }
 	50% { border-bottom-color: <?=$highlight?>; }
 }
 
