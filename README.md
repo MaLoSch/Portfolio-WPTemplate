@@ -9,6 +9,9 @@ To Do
 	- Own Portfolio
 - Clean up quotes from Douglas Adams
 
+Bugs
+- IE? wtf?!?!
+
 Current Plugins
 - Advanced Custom Fields https://wordpress.org/plugins/advanced-custom-fields/
 - All-in-One WP Migration https://wordpress.org/plugins/all-in-one-wp-migration/
