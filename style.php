@@ -65,7 +65,7 @@ li a { border-bottom: 0px; }
 .mask { background-color:<?=$highlight?>; display: table; width: calc(100% - 32px); height: 144px; padding:16px; float: left; position: absolute; left: 0px; top: 0px; opacity: 0; text-align: center; transition: opacity .5s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
 .mask:hover { opacity: 0.89; }
 .mask span { color: <?=$white?>; font-size: 21px; display: table-cell; vertical-align: middle; top: -10px; }
-.excerpt { padding-right: 16px; }
+.excerpt { padding-right: 16px; font-size: 16px; margin-top: 8px; }
 
 /* Project page */
 .project_description { max-width: 100%; margin: 0 0 16px 0; float: left; }
@@ -99,7 +99,7 @@ iframe { margin-bottom: 11px; } <!-- usually margin-bottom is 16px but the ifram
 .categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
 .categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
-.categories_archive { margin-top: 8px; font-size: 13px; color: #333; font-family: 'bariol_regular'; padding-right: 5px; }
+.categories_archive { margin-top: 8px; font-size: 16px; font-family: 'bariol_regular'; padding-right: 8px; }
 
 /* Back to top button */
 #return-to-top { border: 1px solid <?=$highlight?>; background-color: <?=$white?>; position: fixed; bottom: 16px; left: 50%; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; -webkit-animation: none; -moz-animation: none; -o-animation: none; -ms-animation: none; animation: none; }
@@ -185,7 +185,7 @@ ul a:visited { text-decoration: none; }
 .current_page_item a { font-family: 'bariol_regular'; }
 .menu-btn { background-color:<?=$highlight?>; cursor: pointer; padding: 3px 8px 5px; color: <?=$white?>; margin: 24px 0 32px; }
 .main { float: left; }
-.featureProject { margin: 0 0 32px 0; float: left; }
+.featureProject { margin: 0 0 32px 0; float: left; height: 250px; }
 #sidebar_menu { width: 282px; padding: 0 32px 0 0; float: left; }
 #container { margin: 0 auto; text-align: left; overflow: hidden; } /* need overflow: hidden; to avoid Google Chrome bug. See - http://stackoverflow.com/questions/15550205/strange-rendering-issue-in-chrome-with-floats-in-a-div-with-margin-top */
 #currentColor { float: right; }

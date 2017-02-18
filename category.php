@@ -44,6 +44,9 @@
                                         <?php } else { ?>
                                              <a href="<?php the_permalink() ?>"><?php echo get_the_title(); ?></a> <!-- get title of page -->
                                         <?php } ?>
+                                        <p class="categories_archive">
+          							<?php exclude_post_categories_archive("40", ", "); ?> <!-- list all categories but exclude cat 19 (Portfolio). See functions.php for more info or visit http://wordpress.stackexchange.com/questions/31181/exclude-categories-from-the-category -->
+          						</p>
                                    </div>
 						</div>
 

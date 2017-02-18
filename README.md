@@ -3,14 +3,12 @@ WordPress Template for my online portfolio. See it in action on http://www.malos
 
 To Do
 - Add missing pictures and descriptions and filters
+- Think about categories (again)
 - Add missing projects
 	- CHI program
 	- DIS Website
 	- Own Portfolio
 - Clean up quotes from Douglas Adams
-
-Bugs
-- category list beneath projects with the portfolio cat in archive page have a comma at the end
 
 Current Plugins
 - Advanced Custom Fields https://wordpress.org/plugins/advanced-custom-fields/
