@@ -10,7 +10,7 @@ To Do
 - Clean up quotes from Douglas Adams
 
 Bugs
-- IE? wtf?!?!
+- category list beneath projects with the portfolio cat in archive page have a comma at the end
 
 Current Plugins
 - Advanced Custom Fields https://wordpress.org/plugins/advanced-custom-fields/

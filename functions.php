@@ -60,3 +60,26 @@
 			}
 		}
 	}
+?>
+<?php
+	// Exlude categories from the_category -- http://wordpress.stackexchange.com/questions/31181/exclude-categories-from-the-category
+	function exclude_post_categories_archive($excl='', $spacer=' ') { // create new function called exclude_post_categories_archive
+		$categories = get_the_category($post->ID); // get all categories and store them in $categories
+		if (!empty($categories)) {
+			$exclude = $excl; // store categories that should be excluded in $exclude
+			$exclude = explode(",", $exclude); // if there are more than one category, they are separated by commas
+			$thecount = count(get_the_category()) - count($exclude); // count the number of categories to be excluded and store the number in $thecount
+			foreach ($categories as $cat) { // for each entry in $categories do the following
+				$html = ''; // create empty html
+				if (!in_array($cat->cat_ID, $exclude)) { // if the current category should not be excluded
+					$html .= '<span>'; // append <li> to $html
+			     	$html .= $cat->cat_name . '</span>'; // append title to $html using the current category title then close the <li> tag
+					if ($thecount >= 1) { // if there is more than one category to be excluded remaining
+			     		$html .= $spacer; // append $spacer to html
+			     	}
+			     	$thecount--; // substract 1 from $thecount
+			     	echo $html; // give back $html
+			     }
+			}
+		}
+	}

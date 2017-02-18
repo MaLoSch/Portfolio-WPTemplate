@@ -99,6 +99,8 @@ iframe { margin-bottom: 11px; } <!-- usually margin-bottom is 16px but the ifram
 .categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
 .categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
+.categories_archive { margin-top: 8px; font-size: 13px; color: #333; font-family: 'bariol_regular'; padding-right: 5px; }
+
 /* Back to top button */
 #return-to-top { border: 1px solid <?=$highlight?>; background-color: <?=$white?>; position: fixed; bottom: 16px; left: 50%; width: 64px; height: 64px; display: block; text-decoration: none; display: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; -webkit-animation: none; -moz-animation: none; -o-animation: none; -ms-animation: none; animation: none; }
 #return-to-top i { color: <?=$highlight?>; margin: 0; position: relative; left: 22px; top: 21px; font-size: 21px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
