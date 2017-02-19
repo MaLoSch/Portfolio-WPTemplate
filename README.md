@@ -3,7 +3,6 @@ WordPress Template for my online portfolio. See it in action on http://www.malos
 
 To Do
 - Add missing pictures and descriptions and filters
-- Think about categories (again)
 - Add missing projects
 	- CHI program
 	- DIS Website
@@ -22,5 +21,3 @@ Current Plugins
 - Zotpress https://wordpress.org/plugins/zotpress/
 - PHP Browser Detection https://en-ca.wordpress.org/plugins/php-browser-detection/
 - Head Meta Data https://en-ca.wordpress.org/plugins/head-meta-data/screenshots/
-
-Software, User Experience, Installation, Prototyping, Print, Visual Identity, App, Design Research, Programming, Hardware, Experiment, Web, Service, Thesis, Portfolio
