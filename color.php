@@ -12,7 +12,7 @@
 	if($month > 11 || $month <= 2) {
 		$color = "#D52539"; // Winter
 	} else if ($month > 2 && $month <= 5) {
-		$color = "#B0BA1D"; //Spring
+		$color = "#90a019"; //Spring
 	} else if ($month > 5 && $month <= 8) {
 		$color = "#15796F"; //Summer
 	} else if ($month > 8 && $month <= 11) {

@@ -87,10 +87,7 @@ img { vertical-align: top; max-width: 100%; height: auto; margin: 0 0 16px 0; fl
 #bio { width: 100%; margin: 0 0 48px 0; }
 
 /* Videos */
-iframe { margin-bottom: 11px; } <!-- usually margin-bottom is 16px but the iframe has a default margin of 5px which I can't find/remove -->
-
-/* Publications */
-.csl-bib-body { padding-left: 0 !important; text-indent: 0 !important; line-height: normal !important; }
+iframe { margin-bottom: 11px; } /*usually margin-bottom is 16px but the iframe has a default margin of 5px which I can't find/remove */
 
 /* Archive */
 .categories_ul li { display: inline-block; }
@@ -99,6 +96,7 @@ iframe { margin-bottom: 11px; } <!-- usually margin-bottom is 16px but the ifram
 .categories_ul li a:hover { background-color: <?=$highlight?>; color: <?=$white?>; }
 .categories_ul li.current-cat a { background-color: <?=$highlight?>; color: <?=$white?>; }
 
+/* Category list beneath each post on the archive overview page */
 .categories_archive { margin-top: 8px; font-size: 16px; font-family: 'bariol_regular'; padding-right: 8px; }
 
 /* Back to top button */
@@ -271,5 +269,12 @@ ul a:visited { color: <?=$highlight?>; }
          url('assets/fonts/bariol_regular_italic-webfont.svg#bariolregular_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+
+
+/********** Publications **********/
+
+/* Zotpress CSS override */
+/* (should be as close to the bottom of the css as possible. See http://stackoverflow.com/questions/189621/when-does-csss-important-declaration-not-work ) */
+.zp-List .zp-Entry .csl-bib-body { padding-left: 0 !important; text-indent: 0 !important; line-height: normal !important; }
