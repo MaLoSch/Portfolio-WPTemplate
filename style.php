@@ -19,7 +19,7 @@ Author URI: http://malosch.com
 /********** NON-RESPONSIVE **********/
 
 /* General structure */
-* {	margin: 0; padding: 0; color: #333; -webkit-font-smoothing: antialiased; }
+* {	margin: 0; padding: 0; color: #444; -webkit-font-smoothing: antialiased; }
 html, body { font-family: 'bariol_regular'; font-size: 18px; background-color: #fcfcfc; overflow-x: hidden; }
 .clear { clear: both; }
 .header { height: auto; } /* header including the colored line + respsonsive menu button + hex color code */
@@ -44,7 +44,7 @@ ul { list-style-type: none; }
 .mtphr-dnt-tick-contents { padding-bottom: 1px; }
 
 /* Links */
-a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: black; -webkit-animation: color-change 5s ease-in-out infinite; -moz-animation: color-change 5s ease-in-out infinite; -o-animation: color-change 5s ease-in-out infinite; -ms-animation: color-change 5s ease-in-out infinite; animation: color-change 5s ease-in-out infinite; }
+a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: #111; -webkit-animation: color-change 5s ease-in-out infinite; -moz-animation: color-change 5s ease-in-out infinite; -o-animation: color-change 5s ease-in-out infinite; -ms-animation: color-change 5s ease-in-out infinite; animation: color-change 5s ease-in-out infinite; }
 a:hover { color:<?=$highlight?>; border-bottom: 0px; }
 a:visited { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; -webkit-animation: color-change 5s ease-in-out infinite; -moz-animation: color-change 5s ease-in-out infinite; -o-animation: color-change 5s ease-in-out infinite; -ms-animation: color-change 5s ease-in-out infinite; animation: color-change 5s ease-in-out infinite; }
 li a { border-bottom: 0px; }
