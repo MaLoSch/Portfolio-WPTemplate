@@ -43,6 +43,11 @@ ul { list-style-type: none; }
 .mtphr-dnt h3 { font-family: 'bariol_regular'; margin: 48px 0 0 0; }
 .mtphr-dnt-tick-contents { padding-bottom: 1px; }
 
+/* TwentyTwenty-Wrapper */
+.twentytwenty-wrapper {
+	margin-bottom: 16px;
+}
+
 /* Links */
 a { font-family: 'bariol_regular_italic'; text-decoration:none; border-bottom: 1px solid <?=$highlight?>; color: #111; -webkit-animation: color-change 5s ease-in-out infinite; -moz-animation: color-change 5s ease-in-out infinite; -o-animation: color-change 5s ease-in-out infinite; -ms-animation: color-change 5s ease-in-out infinite; animation: color-change 5s ease-in-out infinite; }
 a:hover { color:<?=$highlight?>; border-bottom: 0px; }
