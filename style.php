@@ -283,3 +283,7 @@ ul a:visited { color: <?=$highlight?>; }
 /* Zotpress CSS override */
 /* (should be as close to the bottom of the css as possible. See http://stackoverflow.com/questions/189621/when-does-csss-important-declaration-not-work ) */
 .zp-List .zp-Entry .csl-bib-body { padding-left: 0 !important; text-indent: 0 !important; line-height: normal !important; }
+
+.csl-bib-body { /* CSS for single publications in library */
+	margin-top: 24px; /* Add spacing between publications released in same year */
+}
